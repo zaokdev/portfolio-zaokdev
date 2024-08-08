@@ -1,36 +1,90 @@
 ---
-
+import "@fontsource-variable/arimo";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Kevin Zapata - Portafolio</title>
-	</head>
-	<body class="bg-slate-950">
-		 <!--CARD SECTION --> 
-		<main class="bg-slate-950 md:grid md:grid-cols-12 md:mx-48 border mx-auto mt-12">
-			<section class="md:col-span-4 md:flex md:justify-end">
-				<div class="sticky top-10 border flex items-center justify-start flex-col text-black bg-slate-50 max-w-fit h-fit p-8 rounded-lg">
-					<img src="https://placehold.co/250" class="rounded-full">
-					<h2>Kevin Zapata</h2>
-				</div>
-			</section>
-	
-			<!--MAIN SECTIONS -->
-			<section class="col-span-8 min-h-screen px-12">
-				<h1 class="text-normalTitle text-8xl"><strong class="text-emphasisTitle">Frontend</strong><br>Developer</h1>
-				<p class="text-normalText pr-8 text-2xl mt-6">Web development enthusiast, focused on efficient and functional layout. Skilled in transforming concepts into fast and effective websites.</p>
-				<div class="flex">
-					<img src="icons/fundamentals.png" alt="HTML, CSS & JavaScript" class="h-32">
-					<img src="icons/react.png" alt="React.js" class="h-32">
-					<img src="icons/ts.png" alt="Typescript" class="h-32">
-					<img src="icons/nextjs.png" alt="Next.js" class="h-32">
-				</div>
-			</section>	
-		</main>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Kevin Zapata - Portafolio</title>
+    <style>
+      body {
+        font-family: "Arimo Variable", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950">
+    <!--CARD SECTION -->
+    <main class="bg-slate-950 md:grid md:grid-cols-12 xl:mx-48 mx-auto mt-12">
+      <section class="md:col-span-4 md:flex md:justify-end">
+        <div
+          class="sticky top-10 flex items-center min-w-full md:min-w-fit justify-start flex-col text-normalText md:text-black md:bg-normalTitle max-w-fit h-fit p-6 md:rounded-lg"
+        >
+          <img src="/icons/mi-pic-removebg.png" class="rounded-full" />
+          <h2 class="text-6xl md:text-4xl align-center">Kevin Zapata</h2>
+		  <span>Currently an IT engineer student</span>
+          <!-- ICONS -->
+          <div class="flex gap-2 filter invert md:invert-0">
+			<a href="https://www.linkedin.com/in/zaokdev/" target="_blank"><img class="h-8" src="https://cdn-icons-png.flaticon.com/512/61/61109.png"/></a>
+			<a href="https://www.linkedin.com/in/zaokdev/" target="_blank"><img class="h-8" src="icons/github.png"/></a>
+		  </div>
+        </div>
+      </section>
+
+      <!--MAIN SECTIONS -->
+      <section class="col-span-8 min-h-screen md:px-12">
+        <h2
+          class="text-normalTitle text-5xl text-center md:text-start md:text-8xl"
+        >
+          <strong class="text-emphasisTitle">FRONTEND</strong><br />DEVELOPER
+        </h2>
+        <p class="text-normalText pr-8 text-2xl mt-6">
+          Web development enthusiast, focused on efficient and functional
+          layout. Skilled in transforming concepts into fast and effective
+          websites.
+        </p>
+        <div class="flex flex-wrap mt-12 justify-center md:justify-start gap-4">
+          <img
+            src="icons/fundamentals.png"
+            alt="HTML, CSS & JavaScript"
+            class="h-32"
+          />
+          <img src="icons/react.png" alt="React.js" class="h-32 md:mt-24" />
+          <img src="icons/ts.png" alt="Typescript" class="h-32" />
+          <img src="icons/nextjs.png" alt="Next.js" class="h-32 md:mt-24" />
+        </div>
+        <hr class="my-12" />
+        <h2
+          class="text-normalTitle text-5xl text-center md:text-start md:text-8xl"
+        >
+		<!-- LATEST PROJECTS -->
+          <strong class="text-emphasisTitle">LATEST</strong><br />PROJECTS
+        </h2>
+
+		<!-- DREAMAIRA -->
+		<div class="bg-slate-700 w-full p-8 rounded-lg flex justify-start gap-12">
+			<img src="/projects/dreamaira-main.png" alt="" class="w-1/2 h-72 rounded-lg">
+			<div class="text-normalTitle">
+				<h3 class="text-normalText">DreamAIra</h3>
+				<p>An AI-powered story generator, fully customizable </p>
+			</div>
+		</div>
+
+		<!-- CRYPTOMETER -->
+
+		<div class="bg-slate-700 w-full p-8 rounded-lg flex justify-start gap-12 mt-12">
+			<img src="/projects/dreamaira-main.png" alt="" class="w-1/2 h-72 rounded-lg">
+			<div class="text-normalTitle">
+				<h3 class="text-normalText">CryptoMeter</h3>
+				<p>Cryptocurrencies price tracker</p>
+			</div>
+		</div>
+
+
+      </section>
+    </main>
+	<img src="sonic.gif" class="hidden md:block md:fixed bottom-0 h-8">
+  </body>
 </html>
