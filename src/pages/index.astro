@@ -17,19 +17,28 @@ import "@fontsource-variable/arimo";
   </head>
   <body class="bg-slate-950">
     <!--CARD SECTION -->
-    <main class="bg-slate-950 md:grid md:grid-cols-12 xl:mx-48 mx-auto mt-12">
+    <main
+      class="bg-slate-950 md:grid md:grid-cols-12 xl:mx-48 mx-auto md:mt-48"
+    >
       <section class="md:col-span-4 md:flex md:justify-end">
         <div
           class="sticky top-10 flex items-center min-w-full md:min-w-fit justify-start flex-col text-normalText md:text-black md:bg-normalTitle max-w-fit h-fit p-6 md:rounded-lg"
         >
           <img src="/icons/mi-pic-removebg.png" class="rounded-full" />
           <h2 class="text-6xl md:text-4xl align-center">Kevin Zapata</h2>
-		  <span>Currently an IT engineer student</span>
+          <span>Currently an IT engineer student</span>
           <!-- ICONS -->
           <div class="flex gap-2 filter invert md:invert-0">
-			<a href="https://www.linkedin.com/in/zaokdev/" target="_blank"><img class="h-8" src="https://cdn-icons-png.flaticon.com/512/61/61109.png"/></a>
-			<a href="https://www.linkedin.com/in/zaokdev/" target="_blank"><img class="h-8" src="icons/github.png"/></a>
-		  </div>
+            <a href="https://www.linkedin.com/in/zaokdev/" target="_blank"
+              ><img
+                class="h-8"
+                src="https://cdn-icons-png.flaticon.com/512/61/61109.png"
+              /></a
+            >
+            <a href="https://www.linkedin.com/in/zaokdev/" target="_blank"
+              ><img class="h-8" src="icons/github.png" /></a
+            >
+          </div>
         </div>
       </section>
 
@@ -55,36 +64,112 @@ import "@fontsource-variable/arimo";
           <img src="icons/ts.png" alt="Typescript" class="h-32" />
           <img src="icons/nextjs.png" alt="Next.js" class="h-32 md:mt-24" />
         </div>
-        <hr class="my-12" />
+
         <h2
-          class="text-normalTitle text-5xl text-center md:text-start md:text-8xl"
+          class="text-normalTitle text-5xl text-center md:text-start md:text-8xl mt-12"
         >
-		<!-- LATEST PROJECTS -->
+          <!-- LATEST PROJECTS -->
           <strong class="text-emphasisTitle">LATEST</strong><br />PROJECTS
         </h2>
 
-		<!-- DREAMAIRA -->
-		<div class="bg-slate-700 w-full p-8 rounded-lg flex justify-start gap-12">
-			<img src="/projects/dreamaira-main.png" alt="" class="w-1/2 h-72 rounded-lg">
-			<div class="text-normalTitle">
-				<h3 class="text-normalText">DreamAIra</h3>
-				<p>An AI-powered story generator, fully customizable </p>
-			</div>
-		</div>
+        <!-- DREAMAIRA -->
+        <div
+          class="bg-slate-700 hover:bg-slate-800 transition-colors w-full p-8 rounded-lg flex justify-start gap-12"
+        >
+          <img
+            src="/projects/dreamaira-main.png"
+            alt=""
+            class="w-1/2 h-72 rounded-lg"
+          />
+          <div class="text-normalTitle">
+            <h3 class="text-normalText">DreamAIra</h3>
+            <p>An AI-powered story generator, fully customizable</p>
+          </div>
+        </div>
 
-		<!-- CRYPTOMETER -->
+        <!-- CRYPTOMETER -->
 
-		<div class="bg-slate-700 w-full p-8 rounded-lg flex justify-start gap-12 mt-12">
-			<img src="/projects/dreamaira-main.png" alt="" class="w-1/2 h-72 rounded-lg">
-			<div class="text-normalTitle">
-				<h3 class="text-normalText">CryptoMeter</h3>
-				<p>Cryptocurrencies price tracker</p>
-			</div>
-		</div>
+        <div
+          class="bg-slate-700 hover:bg-slate-800 transition-colors w-full p-8 rounded-lg flex justify-start gap-12 mt-12"
+        >
+          <img
+            src="/projects/dreamaira-main.png"
+            alt=""
+            class="w-1/2 h-72 rounded-lg"
+          />
+          <div class="text-normalTitle">
+            <h3 class="text-normalText">CryptoMeter</h3>
+            <p>Cryptocurrencies price tracker</p>
+          </div>
+        </div>
 
+        <!--FORM -->
+            <h2 class="text-normalTitle text-5xl md:text-8xl mt-12"><strong class="text-emphasisTitle">CONTACT</strong><br>ME</h2>
+
+          <form
+            class="flex flex-col gap-2 text-normalText md:py-12 md:pr-12 md:pl-2 rounded-xl"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="YOUR_ACCESS_KEY_HERE"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Contact Form Submission from Web3Forms"
+            />
+            <input type="hidden" name="from_name" value="Portfolio Email Form" />
+            <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+
+                <label for="name" class="text-2xl">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
+                  placeholder="Your name"
+                  type="text"
+                  required
+                  autocomplete="off"
+                />
+
+                <label for="email" class="text-2xl">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
+                  placeholder="Your email"
+                  type="email"
+                  required
+                  autocomplete="off"
+                />
+
+                <label for="phone" class="text-2xl">Phone</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
+                  placeholder="+1 (234) 56789"
+                  type="text"
+                  autocomplete="off"
+                />
+
+                <label for="message" class="text-2xl">Message</label>
+                <textarea
+                  class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
+                  id="message"
+                  name="message"
+                  placeholder="Your message" required
+                  autocomplete="off"></textarea>
+
+            <button class="text-xl text-white hover:bg-indigo-800 transition-colors bg-indigo-600 rounded-xl max-w-fit px-2 mt-2 py-4" type="submit">Send Message</button>
+          </form>
 
       </section>
     </main>
-	<img src="sonic.gif" class="hidden md:block md:fixed bottom-0 h-8">
+    <img src="sonic.gif" class="hidden md:block md:fixed bottom-0 h-8" />
   </body>
 </html>
