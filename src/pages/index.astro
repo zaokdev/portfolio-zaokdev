@@ -38,10 +38,11 @@ import "@fontsource-variable/arimo";
 
 
 
-    <!--CARD SECTION -->
+    
     <main
-      class="md:grid md:grid-cols-12 xl:mx-48 mx-auto md:mt-48"
+      class="md:grid md:grid-cols-12 xl:mx-48 md:mt-48 border-red-900 px-6 md:px-0"
     >
+    <!--CARD SECTION -->
       <section class="md:col-span-4 md:flex md:justify-end z-20">
         <div
           class="sticky top-10 flex items-center min-w-full md:min-w-fit justify-start flex-col text-normalText md:text-black md:bg-normalTitle max-w-fit h-fit p-6 md:rounded-lg"
@@ -50,15 +51,15 @@ import "@fontsource-variable/arimo";
           <h2 class="text-6xl md:text-4xl align-center">Kevin Zapata</h2>
           <span>Currently an IT engineer student</span>
           <!-- ICONS -->
-          <div class="flex gap-2 filter invert md:invert-0">
+          <div class="flex gap-2 filter invert md:invert-0 mt-6">
             <a href="https://www.linkedin.com/in/zaokdev/" target="_blank"
               ><img
-                class="h-8"
+                class="h-14 md:h-10"
                 src="https://cdn-icons-png.flaticon.com/512/61/61109.png"
               /></a
             >
-            <a href="https://www.linkedin.com/in/zaokdev/" target="_blank"
-              ><img class="h-8" src="icons/github.png" /></a
+            <a href="https://github.com/zaokdev" target="_blank"
+              ><img class="h-14 md:h-10" src="icons/github.png" /></a
             >
           </div>
         </div>
@@ -71,7 +72,7 @@ import "@fontsource-variable/arimo";
         >
           <strong class="text-emphasisTitle">FRONTEND</strong><br />DEVELOPER
         </h2>
-        <p class="text-center md:text-left text-normalText pr-8 text-2xl mt-6">
+        <p class="text-center md:text-left text-normalText md:pr-8 text-2xl mt-6">
           Web development enthusiast, focused on efficient and functional
           layout. Skilled in transforming concepts into fast and effective
           websites.
@@ -88,45 +89,45 @@ import "@fontsource-variable/arimo";
         </div>
 
         <h2
-          class="text-normalTitle text-5xl md:text-6xl lg:text-8xl mt-12"
+          class="text-normalTitle text-5xl md:text-6xl lg:text-8xl mt-12 text-center md:text-left"
         >
           <!-- LATEST PROJECTS -->
-          <strong class="text-emphasisTitle z-20">LATEST</strong><br />PROJECTS
+          <strong class="text-emphasisTitle z-20 ">LATEST</strong><br />PROJECTS
         </h2>
 
         <!-- DREAMAIRA -->
         <div
-          class="bg-slate-700 hover:bg-slate-800 transition-colors w-full p-8 rounded-lg flex justify-start gap-12 z-20"
+          class="bg-slate-700 hover:bg-slate-800 flex-col items-center md:flex-row transition-colors w-full p-8 rounded-lg flex justify-start gap-12 mt-12 z-20"
         >
           <img
             src="/projects/dreamaira-main.png"
             alt=""
-            class="w-1/2 h-72 rounded-lg"
+            class="min-w-1/2 md:w-1/2 h-72 rounded-lg object-cover"
           />
-          <div class="text-normalTitle">
-            <h3 class="text-normalText">DreamAIra</h3>
-            <p>An AI-powered story generator, fully customizable</p>
+          <div class="text-normalTitle self-start">
+            <h3 class="text-normalText font-bold text-3xl">DreamAIra</h3>
+            <p class="text-lg">Powered with Perplexity.ai API, DreamAIra provides a dedicated environment for generating and customizing writings with just a prompt.</p>
           </div>
         </div>
 
         <!-- CRYPTOMETER -->
 
         <div
-          class="bg-slate-700 hover:bg-slate-800 transition-colors w-full p-8 rounded-lg flex justify-start gap-12 mt-12 z-20"
+          class="bg-slate-700 hover:bg-slate-800 flex-col items-center md:flex-row transition-colors w-full p-8 rounded-lg flex justify-start gap-12 mt-12 z-20"
         >
           <img
-            src="/projects/dreamaira-main.png"
+            src="/projects/cryptometer-main.png"
             alt=""
-            class="w-1/2 h-72 rounded-lg"
+            class="min-w-1/2 md:w-1/2 h-72 rounded-lg object-cover"
           />
-          <div class="text-normalTitle">
-            <h3 class="text-normalText">CryptoMeter</h3>
-            <p>Cryptocurrencies price tracker</p>
+          <div class="text-normalTitle self-start">
+            <h3 class="text-normalText text-3xl font-bold">CryptoMeter</h3>
+            <p class="text-lg">Cryptocurrencies price tracker</p>
           </div>
         </div>
 
         <!--FORM -->
-            <h2 class="text-normalTitle text-5xl md:text-8xl mt-12"><strong class="text-emphasisTitle">CONTACT</strong><br>ME</h2>
+            <h2 class="text-normalTitle text-5xl text-center md:text-left md:text-8xl mt-12"><strong class="text-emphasisTitle">CONTACT</strong><br>ME</h2>
 
           <form
             class="flex flex-col gap-2 text-normalText md:py-12 md:pr-12 md:pl-2 rounded-xl"
@@ -187,7 +188,7 @@ import "@fontsource-variable/arimo";
                   placeholder="Your message" required
                   autocomplete="off"></textarea>
 
-            <button class="text-xl text-white hover:bg-indigo-800 transition-colors bg-indigo-600 rounded-xl max-w-fit px-2 mt-2 py-4" type="submit">Send Message</button>
+            <button class="text-xl text-white hover:bg-indigo-800 transition-colors bg-indigo-600 rounded-xl max-w-fit px-6 mt-2 py-4" type="submit">Send Message</button>
           </form>
 
       </section>
