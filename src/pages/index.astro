@@ -8,7 +8,7 @@ import "@fontsource-variable/arimo";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css" />
     <title>Kevin Zapata - Portafolio</title>
     <style>
       body {
@@ -17,7 +17,6 @@ import "@fontsource-variable/arimo";
     </style>
   </head>
   <body class="bg-slate-950">
-
     <!-- BACKGROUND -->
     <div class="container-bg">
       <div class="bubbles">
@@ -36,18 +35,18 @@ import "@fontsource-variable/arimo";
       </div>
     </div>
 
-
-
-    
     <main
       class="md:grid md:grid-cols-12 xl:mx-48 md:mt-48 border-red-900 px-6 md:px-0"
     >
-    <!--CARD SECTION -->
+      <!--CARD SECTION -->
       <section class="md:col-span-4 md:flex md:justify-end z-20">
         <div
-          class="sticky top-10 flex items-center min-w-full md:min-w-fit justify-start flex-col text-normalText md:text-black md:bg-normalTitle max-w-fit h-fit p-6 md:rounded-lg"
+          class="sticky top-10 flex items-center gap-4 min-w-full md:min-w-fit justify-start flex-col text-normalText md:text-black md:bg-normalTitle max-w-fit h-fit p-6 md:rounded-lg"
         >
-          <img src="/icons/mi-pic-removebg.png" class="rounded-full" />
+          <img
+            src="/icons/pfp.webp"
+            class="md:rounded-md md:h-64 h-32 rounded-full"
+          />
           <h2 class="text-6xl md:text-4xl align-center">Kevin Zapata</h2>
           <span>Currently an IT engineer student</span>
           <!-- ICONS -->
@@ -72,7 +71,9 @@ import "@fontsource-variable/arimo";
         >
           <strong class="text-emphasisTitle">FRONTEND</strong><br />DEVELOPER
         </h2>
-        <p class="text-center md:text-left text-normalText md:pr-8 text-2xl mt-6">
+        <p
+          class="text-center md:text-left text-normalText md:pr-8 text-2xl mt-6"
+        >
           Web development enthusiast, focused on efficient and functional
           layout. Skilled in transforming concepts into fast and effective
           websites.
@@ -92,28 +93,15 @@ import "@fontsource-variable/arimo";
           class="text-normalTitle text-5xl md:text-6xl lg:text-8xl mt-12 text-center md:text-left"
         >
           <!-- LATEST PROJECTS -->
-          <strong class="text-emphasisTitle z-20 ">LATEST</strong><br />PROJECTS
+          <strong class="text-emphasisTitle z-20">LATEST</strong><br />PROJECTS
         </h2>
-
-        <!-- DREAMAIRA -->
-        <div
-          class="bg-slate-700 hover:bg-slate-800 flex-col items-center md:flex-row transition-colors w-full p-8 rounded-lg flex justify-start gap-12 mt-12 z-20"
-        >
-          <img
-            src="/projects/dreamaira-main.png"
-            alt=""
-            class="min-w-1/2 md:w-1/2 h-72 rounded-lg object-cover"
-          />
-          <div class="text-normalTitle self-start">
-            <h3 class="text-normalText font-bold text-3xl">DreamAIra</h3>
-            <p class="text-lg">Powered with Perplexity.ai API, DreamAIra provides a dedicated environment for generating and customizing writings with just a prompt.</p>
-          </div>
-        </div>
 
         <!-- CRYPTOMETER -->
 
-        <div
-          class="bg-slate-700 hover:bg-slate-800 flex-col items-center md:flex-row transition-colors w-full p-8 rounded-lg flex justify-start gap-12 mt-12 z-20"
+        <a
+          class="bg-slate-700 hover:bg-slate-800 flex-col items-center md:flex-row transition-colors w-full p-8 rounded-lg flex justify-start md:justify-between gap-12 mt-12 z-20"
+          href="https://github.com/zaokdev"
+          target="_blank"
         >
           <img
             src="/projects/cryptometer-main.png"
@@ -124,73 +112,118 @@ import "@fontsource-variable/arimo";
             <h3 class="text-normalText text-3xl font-bold">CryptoMeter</h3>
             <p class="text-lg">Cryptocurrencies price tracker</p>
           </div>
-        </div>
+        </a>
+
+        <!-- DREAMAIRA -->
+        <a
+          class="bg-slate-700 hover:bg-slate-800 flex-col items-center md:flex-row transition-colors w-full p-8 rounded-lg flex justify-start md:justify-between gap-12 mt-12 z-20"
+          href="https://github.com/zaokdev"
+          target="_blank"
+        >
+          <img
+            src="/projects/dreamaira-main.png"
+            alt=""
+            class="min-w-1/2 md:w-1/2 h-72 rounded-lg object-cover"
+          />
+          <div class="text-normalTitle self-start">
+            <h3 class="text-normalText font-bold text-3xl">DreamAIra</h3>
+            <p class="text-lg">
+              Powered with Perplexity.ai API, DreamAIra provides a dedicated
+              environment for generating and customizing writings with just a
+              prompt.
+            </p>
+          </div>
+        </a>
+
+        <!-- SYLVANIAN FAMILIES SINGLE LANDING PAGE -->
+        <a
+          class="bg-slate-700 hover:bg-slate-800 flex-col items-center md:flex-row transition-colors w-full p-8 rounded-lg flex justify-start md:justify-between gap-12 mt-12 z-20"
+          href="https://sylvanippon-landing-page.vercel.app/"
+          target="_blank"
+        >
+          <img
+            src="/projects/sylvanippon.png"
+            alt=""
+            class="min-w-1/2 md:w-1/2 h-72 rounded-lg object-cover"
+          />
+          <div class="text-normalTitle self-start">
+            <h3 class="text-normalText text-3xl font-bold">
+              Landing singlepage: SylvaNippon
+            </h3>
+            <p class="text-lg">
+              Landing page about a fictional Sylvanian Families store created
+              for practice purposes
+            </p>
+          </div>
+        </a>
 
         <!--FORM -->
-            <h2 class="text-normalTitle text-5xl text-center md:text-left md:text-8xl mt-12"><strong class="text-emphasisTitle">CONTACT</strong><br>ME</h2>
+        <h2
+          class="text-normalTitle text-5xl text-center md:text-left md:text-8xl mt-12"
+        >
+          <strong class="text-emphasisTitle">CONTACT</strong><br />ME
+        </h2>
 
-          <form
-            class="flex flex-col gap-2 text-normalText md:py-12 md:pr-12 md:pl-2 rounded-xl"
-            action="https://api.web3forms.com/submit"
-            method="POST"
+        <form
+          class="flex flex-col gap-2 text-normalText md:py-12 md:pr-12 md:pl-2 rounded-xl"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+          <input
+            type="hidden"
+            name="subject"
+            value="New Contact Form Submission from Web3Forms"
+          />
+          <input type="hidden" name="from_name" value="Portfolio Email Form" />
+          <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+          <label for="name" class="text-2xl">Name</label>
+          <input
+            id="name"
+            name="name"
+            class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
+            placeholder="Your name"
+            type="text"
+            required
+            autocomplete="off"
+          />
+
+          <label for="email" class="text-2xl">Email</label>
+          <input
+            id="email"
+            name="email"
+            class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
+            placeholder="Your email"
+            type="email"
+            required
+            autocomplete="off"
+          />
+
+          <label for="phone" class="text-2xl">Phone</label>
+          <input
+            id="phone"
+            name="phone"
+            class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
+            placeholder="+1 (234) 56789"
+            type="text"
+            autocomplete="off"
+          />
+
+          <label for="message" class="text-2xl">Message</label>
+          <textarea
+            class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
+            id="message"
+            name="message"
+            placeholder="Your message"
+            required
+            autocomplete="off"></textarea>
+
+          <button
+            class="text-xl text-white hover:bg-indigo-800 transition-colors bg-indigo-600 rounded-xl max-w-fit px-6 mt-2 py-4"
+            type="submit">Send Message</button
           >
-            <input
-              type="hidden"
-              name="access_key"
-              value="YOUR_ACCESS_KEY_HERE"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="New Contact Form Submission from Web3Forms"
-            />
-            <input type="hidden" name="from_name" value="Portfolio Email Form" />
-            <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
-
-
-                <label for="name" class="text-2xl">Name</label>
-                <input
-                  id="name"
-                  name="name"
-                  class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
-                  placeholder="Your name"
-                  type="text"
-                  required
-                  autocomplete="off"
-                />
-
-                <label for="email" class="text-2xl">Email</label>
-                <input
-                  id="email"
-                  name="email"
-                  class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
-                  placeholder="Your email"
-                  type="email"
-                  required
-                  autocomplete="off"
-                />
-
-                <label for="phone" class="text-2xl">Phone</label>
-                <input
-                  id="phone"
-                  name="phone"
-                  class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
-                  placeholder="+1 (234) 56789"
-                  type="text"
-                  autocomplete="off"
-                />
-
-                <label for="message" class="text-2xl">Message</label>
-                <textarea
-                  class="p-2 rounded-xl bg-slate-800 focus:bg-slate-700 hover:bg-slate-700 outline-none"
-                  id="message"
-                  name="message"
-                  placeholder="Your message" required
-                  autocomplete="off"></textarea>
-
-            <button class="text-xl text-white hover:bg-indigo-800 transition-colors bg-indigo-600 rounded-xl max-w-fit px-6 mt-2 py-4" type="submit">Send Message</button>
-          </form>
-
+        </form>
       </section>
     </main>
     <img src="sonic.gif" class="hidden md:block md:fixed bottom-0 h-8" />
